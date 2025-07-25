@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("bg.jpg"); /* your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff; /* Ensures text remains visible on dark background */
+}
+
+
+/* Header */
+.header {
+  background: #202c59;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Services */
+.services {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 26px;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin: 10px 0;
+  font-weight: 500;
+  color: black;
+}
+
+  .contact {
+  background-color: rgba(255, 255, 255, 0.9); /* white with transparency */
+  padding: 40px 20px;
+  text-align: center;
+  color: #000; /* black text for readability */
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+
+/* Gallery */
+.gallery {
+  padding: 40px 20px;
+  background: #f0f4ff;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 26px;
+  color: #202c59;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 26px;
+  color: #202c59;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+  background: #202c59;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .logo-img {
+    height: 45px;
+  }
+
+  .gallery img {
+    height: 90px;
+  }
+
+  .services h2, .gallery h2, .contact h2 {
+    font-size: 22px;
+  }
+}
+
+
+.location {
+  padding: 40px 20px;
+  background: #f9fbff;
+  text-align: center;
+}
+
+.location h2 {
+  font-size: 26px;
+  color: #202c59;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
